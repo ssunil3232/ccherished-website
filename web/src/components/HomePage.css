@@ -1,0 +1,132 @@
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global utility classes */
+.section-spacing {
+  margin: 80px 0;
+}
+
+/* Mobile-first responsive utilities */
+@media (max-width: 768px) {
+  .home-page {
+    overflow-x: hidden;
+  }
+
+  .section-spacing {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page {
+    overflow-x: hidden;
+  }
+
+  .section-spacing {
+    margin: 30px 0;
+  }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) {
+  .feature-item:hover {
+    transform: none;
+    background: rgba(229, 252, 206, 0.3);
+  }
+
+  .btn-waitlist:hover {
+    transform: none;
+  }
+
+  .social-icon:hover {
+    transform: none;
+  }
+}
+
+/* Improve text readability on mobile */
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  p {
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+}
+
+/* Animation classes for enhanced user experience */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Intersection Observer classes for scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family:
+    "Nunito",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  color: var(--text-subtle);
+  font-size: 18px;
+}
+
+/* Error state */
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family:
+    "Nunito",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  color: #ef4444;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}

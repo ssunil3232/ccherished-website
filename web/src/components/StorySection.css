@@ -1,0 +1,154 @@
+.story-section {
+  width: 100%;
+  padding: 2rem;
+}
+
+.story-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.story-description {
+  width: 60%;
+  color: var(--primary-text);
+  font-family:
+    "Nunito",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.story-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.story-text {
+  width: 60%;
+  color: var(--primary-text);
+  text-align: center;
+  font-family:
+    "Nunito",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .story-description{
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .story-text{
+    width: 90%;
+    font-size: 12px;
+  }
+}
+
+/* @media (max-width: 1440px) {
+  .story-section {
+    padding: 60px 50px 0;
+    height: auto;
+  }
+
+  .story-title {
+    width: 100%;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+
+  .story-description {
+    width: 100%;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .story-text {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-section {
+    padding: 40px 20px 0;
+    height: auto;
+  }
+
+  .story-title {
+    font-size: 32px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  .story-description {
+    font-size: 18px;
+    line-height: 28px;
+    width: 100%;
+  }
+
+  .story-badge {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .story-content {
+    margin-top: 60px;
+  }
+
+  .story-text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-section {
+    padding: 30px 16px 0;
+  }
+
+  .story-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .story-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .story-content {
+    margin-top: 40px;
+  }
+
+  .story-text {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+  }
+} */

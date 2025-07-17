@@ -1,0 +1,8 @@
+.config/
+
+# Ignore all files in the .config directory
+# but not the directory itself
+!.config/
+
+# Ignore nodes_modules directory
+node_modules/

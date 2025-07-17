@@ -1,0 +1,239 @@
+.hero-section {
+  width: 100%;
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  color: var(--btn-border-secondary);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 8%;
+}
+
+.hero-gray {
+  font-family:
+    "Nunito",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  color: rgba(177, 187, 200, 1);
+}
+
+.hero-orange {
+  font-size: 28px;
+  color: var(--btn-border-secondary);
+}
+
+.mockup-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-mockup {
+  width: 60%;
+}
+
+.hero-subtitle {
+  color: var(--text-subtle);
+  text-align: center;
+  font-family:
+    "Nunito",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  bottom: 10%;
+}
+
+.notification-text {
+  font-family:
+    "Nunito",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.notification-text.purple {
+  color: rgba(165, 116, 255, 1);
+}
+
+.notification-text.critical {
+  color: var(--critical-color);
+  text-align: center;
+  align-self: stretch;
+}
+
+.notification-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  aspect-ratio: 236/65;
+}
+
+.first-notification {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  left: 5%;
+  top: 40%;
+}
+
+.second-notification {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 5%;
+  top: 60%;
+}
+
+.cherie-center {
+  text-align: center;
+  font-size: 2rem;
+  color: #3a373a;
+  font-family: 'Your Main Font', sans-serif;
+}
+
+.cherie-img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.cherie-logo {
+  height: 1.2em;
+  vertical-align: 0.1em;
+}
+
+.caption-normal {
+  font-family:
+    "Nunito",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--primary-text);
+}
+
+.caption-orange {
+  font-size: 24px;
+  color: var(--btn-border-secondary);
+}
+
+
+@media (max-width: 768px) {
+
+  .hero-title {
+    font-size: 20px;
+    padding-top: 4%;
+  }
+
+  .hero-orange {
+    font-size: 24px;
+  }
+
+  .hero-mockup {
+    width: 80%;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    bottom: 12%;
+  }
+
+  .notification-text {
+    font-size: 18px;
+  }
+
+  .first-notification {
+    top: 30%;
+  }
+
+  .second-notification {
+    top: 50%;
+  }
+
+  .caption-normal {
+    font-size: 16px;
+  }
+
+  .caption-orange {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 16px;
+    padding-top: 2%;
+  }
+
+  .hero-orange {
+    font-size: 20px;
+  }
+
+  .hero-mockup {
+    width: 80%;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    bottom: 8%;
+  }
+
+  .notification-text {
+    font-size: 16px;
+  }
+  .mockup-container{
+    position: none;
+    display: block;
+  }
+
+  .first-notification {
+    top: 30%;
+    left: 60%;
+  }
+
+  .second-notification {
+    top: 50%;
+  }
+
+  .caption-normal {
+    font-size: 12px;
+  }
+
+  .caption-orange {
+    font-size: 16px;
+  }
+}
