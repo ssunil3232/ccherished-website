@@ -9,7 +9,12 @@ const Navigation = () => {
           alt="Cherie Logo"
           className="logo"
         />
-      <button className="btn-waitlist">
+      <button className="btn-waitlist"
+      onClick={() => {
+        const el = document.getElementById("email-signup");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }}
+      >
         <span className="btn-waitlist-text">Join our wait list</span>
       </button>
     </nav>
