@@ -12,7 +12,7 @@ const EmailSignup = () => {
   };
 
   return (
-    <section className="email-signup-section">
+    <section className="email-signup-section" id="email-signup">
       <div className="signup-content">
         <h2 className="signup-title">
           <span className="title-normal">Ready to </span>

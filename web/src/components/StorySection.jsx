@@ -25,13 +25,13 @@ const StorySection = () => {
       </div>
 
       <div className="story-content">
-        <p className="story-text">
+        <span className="story-text">
           We wanted to build a simple, thoughtful companion to make
           staying close feel effortless—reminding you to reach out, celebrate
           special moments, and keep memories alive.<br/>Cherie exists to help turn
-          distance and time into opportunities for deeper connection, every
-          single day.
-        </p>
+          distance and time into opportunities for deeper connection,<br/>
+          <span className="title-orange mynerve-font">every single day</span>.
+        </span>
       </div>
     </section>
   );
