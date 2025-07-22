@@ -3,7 +3,7 @@
   min-height: 100vh;
   background: #fff;
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; <-- THIS WAS THE PROBLEM AND HAS BEEN REMOVED */
 }
 
 /* Ensure smooth scrolling */
@@ -19,7 +19,7 @@ html {
 /* Mobile-first responsive utilities */
 @media (max-width: 768px) {
   .home-page {
-    overflow-x: hidden;
+    /* overflow-x: hidden; <-- REMOVED */
   }
 
   .section-spacing {
@@ -29,7 +29,7 @@ html {
 
 @media (max-width: 480px) {
   .home-page {
-    overflow-x: hidden;
+    /* overflow-x: hidden; <-- REMOVED */
   }
 
   .section-spacing {
