@@ -1,46 +1,30 @@
+/* ================================================= */
+/* === PASTE THIS CODE INTO FeaturesSection.css === */
+/* ================================================= */
+
+/* This outer container creates the scrollable height. */
+/* The height is proportional to the number of features. */
 .features-section {
-  width: 500vw;
-  height: 100vh;
-  flex-shrink: 0;
-  padding: 1rem;
-  justify-content: center;
-  display: flex;
+  height: 500vh; /* 100vh per feature */
   position: relative;
-}
- 
-
-.features-content {
-  display: flex;
-  width: 50%;
-  align-items: start;
-  flex-direction: column;
-  flex-shrink: 0;
-  position: 'sticky';
-  top: 0;
-  height: 100vh;
+  background-color: #FAFAFA; /* Or your desired background color */
 }
 
-@media (max-width: 768px) {
-  .features-section {
-    padding: 1rem;
-  }
+/* This container sticks to the top of the viewport and holds the cards. */
+.features-sticky-container {
+  position: sticky;
+  /* CHANGE 1: Adjust the top position.
+    Set this to the height of your navigation bar.
+    You may need to adjust this value (e.g., 70px, 90px) to match your header.
+  */
+  top: 80px; 
 
-  .features-content {
-    /* padding-left: 4%; */
-    padding-top: 1%;
-    width: 100%;
-  }
-
-}
-
-@media (max-width: 480px) {
-  .features-section {
-    padding: 1rem;
-  }
-
-  .features-content {
-    padding-top: 1%;
-    width: 100%;
-  }
-
+  /* CHANGE 2: Adjust the height.
+    The height should be the full viewport height MINUS the header height
+    to prevent the content from being cut off at the bottom.
+  */
+  height: calc(100vh - 80px);
+  
+  width: 100%;
+  overflow: hidden; /* Prevents content from spilling out during animation */
 }

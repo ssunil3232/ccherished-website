@@ -35,7 +35,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #fff;
   color: var(--primary-text);
-  overflow-x: hidden;
+  
 }
 
 /* Mobile-specific improvements */

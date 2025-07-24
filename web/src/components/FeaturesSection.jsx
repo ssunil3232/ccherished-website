@@ -1,8 +1,10 @@
+// src/components/FeaturesSection.jsx
+
 import React, { useRef } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
-import FeatureComponent from "./FeatureComp";
-import "./FeaturesSection.css";
+import { useScroll } from "framer-motion";
+import FeatureCard from "./FeatureCard.jsx"; // Note this is importing the new component
 import features from "./features.jsx";
+import "./FeaturesSection.css";
 
 const FeaturesSection = () => {
   const ref = useRef(null);
@@ -10,20 +12,20 @@ const FeaturesSection = () => {
     target: ref,
     offset: ["start start", "end end"],
   });
-  const activeIndex = useTransform(scrollYProgress, [0, 1], [0, features.length - 1]);
-  const [displayIndex, setDisplayIndex] = React.useState(0);
-  React.useEffect(() => {
-    const unsubscribe = activeIndex.on("change", (latest) => {
-      setDisplayIndex(Math.round(latest));
-    });
-    return unsubscribe;
-  }, [activeIndex]);
 
   return (
     <section ref={ref} className="features-section">
-      <motion.div className="features-content">
-        <FeatureComponent feature={features[displayIndex]} />
-      </motion.div>
+      <div className="features-sticky-container">
+        {features.map((feature, index) => (
+          <FeatureCard
+            key={feature.id}
+            feature={feature}
+            index={index}
+            totalFeatures={features.length}
+            scrollYProgress={scrollYProgress}
+          />
+        ))}
+      </div>
     </section>
   );
 };
