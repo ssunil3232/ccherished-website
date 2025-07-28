@@ -1,10 +1,9 @@
 // src/components/FeatureCard.jsx
 
 import React from "react";
-import { motion } from "framer-motion";
 import "./FeatureCard.css";
 
-const FeatureCard = ({ feature, index, totalFeatures, scrollYProgress }) => {
+const FeatureCard = ({ feature }) => {
   return (
     <div className="feature-card">
       <div className="feature-text-content">
