@@ -13,12 +13,16 @@ const FeaturesSection = () => {
     offset: ["start center", "end center"],
   });
 
-  // Calculate horizontal translation with better boundaries
-  // Only start moving when fully in view, stop when fully shown
+  // Create discrete steps for snap-like behavior
+  // Each feature gets an equal portion of the scroll progress
+  const stepSize = 1 / features.length;
+  const scrollSteps = features.map((_, index) => index * stepSize);
+  const translateSteps = features.map((_, index) => `-${index * 100}%`);
+
   const x = useTransform(
     scrollYProgress,
-    [0.1, 0.9],
-    ["0%", `-${(features.length - 1) * 100}%`]
+    scrollSteps,
+    translateSteps
   );
 
   return (
