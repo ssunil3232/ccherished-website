@@ -5,16 +5,15 @@
 /* This is the main container for a single feature card. */
 /* It's positioned absolutely to stack on top of the others. */
 .feature-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
+  width: 20%; /* 100% / 5 features = 20% each */
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5%;
-  padding: 0 5%;
+  padding: 0 2.5%;
+  flex-shrink: 0;
 }
 
 /* Left side content */
