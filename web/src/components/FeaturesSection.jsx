@@ -10,13 +10,14 @@ const FeaturesSection = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end start"],
+    offset: ["start center", "end center"],
   });
 
-  // Calculate horizontal translation based on scroll progress
+  // Calculate horizontal translation with better boundaries
+  // Only start moving when fully in view, stop when fully shown
   const x = useTransform(
     scrollYProgress,
-    [0, 1],
+    [0.1, 0.9],
     ["0%", `-${(features.length - 1) * 100}%`]
   );
 
