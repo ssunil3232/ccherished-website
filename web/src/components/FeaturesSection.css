@@ -1,5 +1,5 @@
 .features-section {
-  height: 600vh; /* More height for better scroll control */
+  height: 500vh; /* Height for scroll through all features */
   position: relative;
   background-color: #FAFAFA;
 }
@@ -12,12 +12,5 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-}
-
-.features-horizontal-wrapper {
-  display: flex;
-  width: 500%; /* 100% per feature for 5 features */
-  height: 100%;
-  will-change: transform;
-  scroll-snap-type: x mandatory;
+  justify-content: center;
 }
