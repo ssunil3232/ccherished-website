@@ -5,9 +5,7 @@
 /* This is the main container for a single feature card. */
 /* It's positioned absolutely to stack on top of the others. */
 .feature-card {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;

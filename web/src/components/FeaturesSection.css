@@ -1,30 +1,16 @@
-/* ================================================= */
-/* === PASTE THIS CODE INTO FeaturesSection.css === */
-/* ================================================= */
-
-/* This outer container creates the scrollable height. */
-/* The height is proportional to the number of features. */
 .features-section {
-  height: 500vh; /* 100vh per feature */
+  height: 500vh; /* Height for scroll through all features */
   position: relative;
-  background-color: #FAFAFA; /* Or your desired background color */
+  background-color: #FAFAFA;
 }
 
-/* This container sticks to the top of the viewport and holds the cards. */
 .features-sticky-container {
   position: sticky;
-  /* CHANGE 1: Adjust the top position.
-    Set this to the height of your navigation bar.
-    You may need to adjust this value (e.g., 70px, 90px) to match your header.
-  */
-  top: 80px; 
-
-  /* CHANGE 2: Adjust the height.
-    The height should be the full viewport height MINUS the header height
-    to prevent the content from being cut off at the bottom.
-  */
+  top: 80px;
   height: calc(100vh - 80px);
-  
   width: 100%;
-  overflow: hidden; /* Prevents content from spilling out during animation */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
