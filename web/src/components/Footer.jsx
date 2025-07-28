@@ -25,16 +25,16 @@ const Footer = () => {
                   <Link to="/privacy-policy" className="footer-link">
                     Privacy Policy
                   </Link>
-                  <a href="#blog" className="footer-link">
+                  {/* <a href="#blog" className="footer-link">
                     Blog
-                  </a>
+                  </a> */}
                 </div>
                 <span className="contact-email">team@ccherished.com</span>
               </div>
             </div>
             </div>
 
-            <div className="footer-social">
+            {/* <div className="footer-social">
               <div className="social-icon">
                 <svg
                   width="30"
@@ -90,7 +90,7 @@ const Footer = () => {
                   />
                 </svg>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
