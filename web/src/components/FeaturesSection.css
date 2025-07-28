@@ -1,5 +1,5 @@
 .features-section {
-  height: 400vh;
+  height: 600vh; /* More height for better scroll control */
   position: relative;
   background-color: #FAFAFA;
 }
@@ -19,4 +19,5 @@
   width: 500%; /* 100% per feature for 5 features */
   height: 100%;
   will-change: transform;
+  scroll-snap-type: x mandatory;
 }
