@@ -34,6 +34,7 @@ const Footer = () => {
             </div>
             </div>
 
+
             {/* <div className="footer-social">
               <div className="social-icon">
                 <svg
