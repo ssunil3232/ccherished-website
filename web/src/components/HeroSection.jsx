@@ -14,7 +14,11 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
+        
         <h1 className="hero-title">
+          <div className="hero-logo">
+          <img src="/assets/logoOnly.svg" alt="Cherie Logo" className="logo-image" />
+        </div>
           <span className="hero-gray">Building relationships a </span>
           <span className="hero-orange mynerve-font">connection</span>
           <span className="hero-gray"> at a time</span>
