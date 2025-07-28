@@ -7,11 +7,14 @@ const FeatureCard = ({ feature }) => {
   return (
     <div className="feature-card">
       <div className="feature-text-content">
-        <div className="section-badge">
+        <div className="feature-header">
+          <img src={feature.numberSvg} alt={`Feature ${feature.id}`} className="feature-number-svg" />
+          <div className="section-badge">
             <div className="badge-dot"></div>
             <span className="badge-text">How Cherie shines</span>
+          </div>
         </div>
-        <img src={feature.numberSvg} alt={`Feature ${feature.id}`} className="feature-number-img" />
+        <img src={feature.featureSvg} alt={`Feature ${feature.id}`} className="feature-number-img" />
         <div className="feature-item-box">
             <h3 className="feature-title">{feature.title}</h3>
             <p className="feature-description-text">{feature.description}</p>

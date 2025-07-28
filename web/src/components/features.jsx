@@ -11,7 +11,8 @@ const features = [
     description: "Never let friendships fade—Cherie keeps tabs on how long it's been and sends cheerful nudges to help you stay in touch.",
     // --- CORRECTED PROPERTIES & PATHS ---
     image: "/assets/prev-1.svg",      // Main phone mockup for feature 1
-    numberSvg: "/assets/num-1.svg",   // Number '1' svg
+    numberSvg: "/assets/num-1.svg",   // Number '1' svg,
+    featureSvg: "/assets/feature-1.svg",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const features = [
     // --- CORRECTED PROPERTIES & PATHS ---
     image: "/assets/prev-2.svg",
     numberSvg: "/assets/num-2.svg",
+    featureSvg: "/assets/feature-2.svg",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const features = [
     // --- CORRECTED PROPERTIES & PATHS ---
     image: "/assets/prev-3.svg",
     numberSvg: "/assets/num-3.svg",
+    featureSvg: "/assets/feature-3.svg",
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ const features = [
     // --- CORRECTED PROPERTIES & PATHS ---
     image: "/assets/prev-4.svg",
     numberSvg: "/assets/num-4.svg",
+    featureSvg: "/assets/feature-4.svg",
   },
   {
     id: 5,
@@ -44,6 +48,7 @@ const features = [
     // --- CORRECTED PROPERTIES & PATHS ---
     image: "/assets/prev-5.svg",
     numberSvg: "/assets/num-5.svg",
+    featureSvg: "/assets/feature-5.svg",
   },
 ];
 

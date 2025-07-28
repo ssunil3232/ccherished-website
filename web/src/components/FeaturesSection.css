@@ -1,7 +1,7 @@
 .features-section {
   height: 500vh; /* Height for scroll through all features */
   position: relative;
-  background-color: #FAFAFA;
+  /* background-color: #FAFAFA; */
 }
 
 .features-sticky-container {
