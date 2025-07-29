@@ -29,6 +29,7 @@ const HeroSection = () => {
             src="/assets/main-mockup.svg"
             alt="iPhone Mockup"
             className="hero-mockup"
+            onLoad={() => setMainImageLoaded(true)}
           />
           {/* First Notification: Curve in from left-bottom */}
           <motion.div
