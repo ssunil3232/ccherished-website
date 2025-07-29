@@ -6,6 +6,7 @@ const HeroSection = () => {
   const notif1Ref = useRef(null);
   const notif2Ref = useRef(null);
   const subtitleRef = useRef(null);
+  const [mainImageLoaded, setMainImageLoaded] = React.useState(false);
 
   const notif1InView = useInView(notif1Ref, { amount: 0.6 });
   const notif2InView = useInView(notif2Ref, { amount: 0.6 });
