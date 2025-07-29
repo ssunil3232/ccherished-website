@@ -25,10 +25,13 @@ const HeroSection = () => {
           <span className="hero-gray"> at a time</span>
         </h1>
         <div className="mockup-container">
+          {!mainImageLoaded && (
+            <div className="hero-mockup-skeleton"></div>
+          )}
           <img
             src="/assets/main-mockup.svg"
             alt="iPhone Mockup"
-            className="hero-mockup"
+            className={`hero-mockup ${mainImageLoaded ? 'loaded' : 'loading'}`}
             onLoad={() => setMainImageLoaded(true)}
           />
           {/* First Notification: Curve in from left-bottom */}
