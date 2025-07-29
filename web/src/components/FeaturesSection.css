@@ -1,5 +1,5 @@
 .features-section {
-  height: 750vh; /* 1.5 scrolls per feature (5 features × 1.5 = 7.5 total scrolls) */
+  height: 560vh; /* 1.12 scrolls per feature (5 features × 1.12 = 5.6 total scrolls) */
   position: relative;
   /* background-color: #FAFAFA; */
 }
