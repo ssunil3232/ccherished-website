@@ -14,10 +14,11 @@ const FeaturesSection = () => {
   });
 
   // Calculate which feature to show based on scroll progress
+  // Add padding at start and end for better feature 1 and 5 behavior
   const currentFeatureIndex = useTransform(
     scrollYProgress,
-    [0, 1],
-    [0, features.length - 1]
+    [0, 0.2, 0.8, 1],
+    [0, 0, features.length - 1, features.length - 1]
   );
 
   // Get the current feature based on scroll progress
