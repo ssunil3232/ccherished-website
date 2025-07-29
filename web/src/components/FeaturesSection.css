@@ -1,5 +1,5 @@
 .features-section {
-  height: 500vh; /* Height for scroll through all features */
+  height: 200vh; /* Reduced height for faster transitions between features */
   position: relative;
   /* background-color: #FAFAFA; */
 }
