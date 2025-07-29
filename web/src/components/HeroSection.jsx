@@ -51,6 +51,7 @@ const HeroSection = () => {
               src="/assets/notif-1.svg"
               alt="Notification 1"
               className="notification-image"
+              loading="lazy"
             />
           </motion.div>
           {/* Second Notification: Curve in from right-top */}
@@ -75,6 +76,7 @@ const HeroSection = () => {
               src="/assets/notif-2.svg"
               alt="Notification 2"
               className="notification-image"
+              loading="lazy"
             />
           </motion.div>
           {/* Hero subtitle: fade in */}
