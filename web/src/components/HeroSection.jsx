@@ -37,7 +37,7 @@ const HeroSection = () => {
             ref={notif1Ref}
             initial={{ x: -120, y: 60, opacity: 0, rotate: -10 }}
             animate={
-              notif1InView
+              notif1InView && mainImageLoaded
                 ? { x: 0, y: 0, opacity: 1, rotate: 0 }
                 : { x: -120, y: 60, opacity: 0, rotate: -10 }
             }
@@ -62,7 +62,7 @@ const HeroSection = () => {
             ref={notif2Ref}
             initial={{ x: 120, y: -60, opacity: 0, rotate: 10 }}
             animate={
-              notif2InView
+              notif2InView && mainImageLoaded
                 ? { x: 0, y: 0, opacity: 1, rotate: 0 }
                 : { x: 120, y: -60, opacity: 0, rotate: 10 }
             }
@@ -86,7 +86,7 @@ const HeroSection = () => {
             className="hero-subtitle"
             ref={subtitleRef}
             initial={{ opacity: 0 }}
-            animate={subtitleInView ? { opacity: 1 } : { opacity: 0 }}
+            animate={subtitleInView && mainImageLoaded ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.55 }}
           >
             Calls just don't happen.
