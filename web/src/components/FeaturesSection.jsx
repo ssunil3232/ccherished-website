@@ -10,7 +10,7 @@ const FeaturesSection = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start center", "end center"],
+    offset: ["start end", "end start"],
   });
 
   // Calculate which feature to show based on scroll progress
