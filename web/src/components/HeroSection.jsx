@@ -6,6 +6,7 @@ const HeroSection = () => {
   const notif1Ref = useRef(null);
   const notif2Ref = useRef(null);
   const subtitleRef = useRef(null);
+  const [mainImageLoaded, setMainImageLoaded] = React.useState(false);
 
   const notif1InView = useInView(notif1Ref, { amount: 0.6 });
   const notif2InView = useInView(notif2Ref, { amount: 0.6 });
@@ -24,10 +25,14 @@ const HeroSection = () => {
           <span className="hero-gray"> at a time</span>
         </h1>
         <div className="mockup-container">
+          {!mainImageLoaded && (
+            <div className="hero-mockup-skeleton"></div>
+          )}
           <img
             src="/assets/main-mockup.svg"
             alt="iPhone Mockup"
-            className="hero-mockup"
+            className={`hero-mockup ${mainImageLoaded ? 'loaded' : 'loading'}`}
+            onLoad={() => setMainImageLoaded(true)}
           />
           {/* First Notification: Curve in from left-bottom */}
           <motion.div
@@ -35,7 +40,7 @@ const HeroSection = () => {
             ref={notif1Ref}
             initial={{ x: -120, y: 60, opacity: 0, rotate: -10 }}
             animate={
-              notif1InView
+              notif1InView && mainImageLoaded
                 ? { x: 0, y: 0, opacity: 1, rotate: 0 }
                 : { x: -120, y: 60, opacity: 0, rotate: -10 }
             }
@@ -51,6 +56,7 @@ const HeroSection = () => {
               src="/assets/notif-1.svg"
               alt="Notification 1"
               className="notification-image"
+              loading="lazy"
             />
           </motion.div>
           {/* Second Notification: Curve in from right-top */}
@@ -59,7 +65,7 @@ const HeroSection = () => {
             ref={notif2Ref}
             initial={{ x: 120, y: -60, opacity: 0, rotate: 10 }}
             animate={
-              notif2InView
+              notif2InView && mainImageLoaded
                 ? { x: 0, y: 0, opacity: 1, rotate: 0 }
                 : { x: 120, y: -60, opacity: 0, rotate: 10 }
             }
@@ -75,6 +81,7 @@ const HeroSection = () => {
               src="/assets/notif-2.svg"
               alt="Notification 2"
               className="notification-image"
+              loading="lazy"
             />
           </motion.div>
           {/* Hero subtitle: fade in */}
@@ -82,7 +89,7 @@ const HeroSection = () => {
             className="hero-subtitle"
             ref={subtitleRef}
             initial={{ opacity: 0 }}
-            animate={subtitleInView ? { opacity: 1 } : { opacity: 0 }}
+            animate={subtitleInView && mainImageLoaded ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.55 }}
           >
             Calls just don't happen.

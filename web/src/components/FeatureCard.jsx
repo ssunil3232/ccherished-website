@@ -25,6 +25,7 @@ const FeatureCard = ({ feature }) => {
           src={feature.image}
           alt={feature.title}
           className="feature-image"
+          loading="lazy"
         />
       </div>
     </div>
