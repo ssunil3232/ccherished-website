@@ -250,3 +250,35 @@
     font-size: 16px;
   }
 }
+
+/* Loading skeleton styles */
+.hero-mockup {
+  transition: opacity 0.3s ease-in-out;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-mockup.loading {
+  opacity: 0;
+}
+
+.hero-mockup.loaded {
+  opacity: 1;
+}
+
+.hero-mockup-skeleton {
+  width: 80%;
+  height: 600px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 5;
+  margin: 0 auto;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
